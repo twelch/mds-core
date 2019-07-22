@@ -59,7 +59,9 @@
     "zip-webpack-plugin": "3.0.0"
   },
   "types": "types/mds.d.ts",
-  "dependencies": {},
+  "dependencies": {
+    "cloudevents-sdk": "0.2.3"
+  },
   "scripts": {
     "prepare": "yarn build",
     "build": "yarn run:concurrent build",
