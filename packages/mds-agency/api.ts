@@ -726,14 +726,14 @@ function api(app: express.Express): express.Express {
 
   async function writeTelemetry(telemetry: Telemetry | Telemetry[]) {
     if (!Array.isArray(telemetry)) {
-      const promises: [Promise<number>, Promise<void>, Promise<void>] = [
+      const promises: [Promise<number>, Promise<void>, Promise<void[] | undefined>] = [
         db.writeTelemetry([telemetry]),
         cache.writeTelemetry([telemetry]),
         stream.writeTelemetry([telemetry])
       ]
       return Promise.all(promises)
     }
-    const promises: [Promise<number>, Promise<void>, Promise<void>] = [
+    const promises: [Promise<number>, Promise<void>, Promise<void[] | undefined>] = [
       db.writeTelemetry(telemetry),
       cache.writeTelemetry(telemetry),
       stream.writeTelemetry(telemetry)
