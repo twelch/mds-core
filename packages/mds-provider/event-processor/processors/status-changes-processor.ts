@@ -14,12 +14,12 @@
     limitations under the License.
  */
 
-import db from 'mds-db'
-import logger from 'mds-logger'
+import db from '@mds/mds-db'
+import logger from '@mds/mds-logger'
 import { Feature, Point } from 'geojson'
-import { round, now } from 'mds-utils'
-import { PROPULSION_TYPE, VEHICLE_TYPE, Telemetry, VehicleEvent } from 'mds-types'
-import { StatusChange } from 'mds-db/types'
+import { round, now } from '@mds/mds-utils'
+import { PROPULSION_TYPE, VEHICLE_TYPE, Telemetry, VehicleEvent } from '@mds/mds-types'
+import { StatusChange } from '@mds/mds-db/types'
 import { LabeledStreamEntry } from '../types'
 import { DeviceLabel } from '../labelers/device-labeler'
 import { ProviderLabel } from '../labelers/provider-labeler'

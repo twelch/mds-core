@@ -1,8 +1,8 @@
-import { AUDIT_EVENT_TYPES } from 'mds-types'
+import { AUDIT_EVENT_TYPES } from '@mds/mds-types'
 
-import { csv } from 'mds-utils'
+import { csv } from '@mds/mds-utils'
 
-import log from 'mds-logger'
+import log from '@mds/mds-logger'
 import schema from './schema'
 import { logSql, SqlExecuter, MDSPostgresClient } from './sql-utils'
 

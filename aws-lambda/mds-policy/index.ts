@@ -18,6 +18,6 @@ import {
   AwsServerlessExpressHandler,
   AwsServerlessExpressHandlerFunction
 } from '@aws-lambda/aws-serverless-express-handler'
-import { api as policy } from 'mds-policy'
+import { api as policy } from '@mds/mds-policy'
 
 export const handler: AwsServerlessExpressHandlerFunction = AwsServerlessExpressHandler(policy)

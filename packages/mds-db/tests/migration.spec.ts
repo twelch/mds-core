@@ -2,7 +2,7 @@ import sinon from 'sinon'
 import test from 'unit.js'
 import assert from 'assert'
 
-import log from 'mds-logger'
+import log from '@mds/mds-logger'
 import { updateSchema, createTables, dropTables } from '../migration'
 import schema from '../schema'
 import { PGInfo, configureClient } from '../sql-utils'

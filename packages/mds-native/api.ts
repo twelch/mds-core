@@ -15,10 +15,10 @@
  */
 
 import express from 'express'
-import { pathsFor, ValidationError, ServerError, AuthorizationError, isValidDeviceId, NotFoundError } from 'mds-utils'
-import logger from 'mds-logger'
-import db from 'mds-db'
-import { asPagingParams, asJsonApiLinks } from 'mds-api-helpers'
+import { pathsFor, ValidationError, ServerError, AuthorizationError, isValidDeviceId, NotFoundError } from '@mds/mds-utils'
+import logger from '@mds/mds-logger'
+import db from '@mds/mds-db'
+import { asPagingParams, asJsonApiLinks } from '@mds/mds-api-helpers'
 import {
   NativeApiResponse,
   NativeApiRequest,

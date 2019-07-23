@@ -19,7 +19,7 @@
   "author": "City of Los Angeles",
   "dependencies": {
     "jsonwebtoken": "8.5.1",
-    "mds-api-authorizer": "0.1.3"
+    "@mds/mds-api-authorizer": "0.1.3"
   },
   "devDependencies": {
     "@types/aws-lambda": "8.10.30",

@@ -1,7 +1,7 @@
-import { UUID } from 'mds-types'
+import { UUID } from '@mds/mds-types'
 import { MultiPolygon } from 'geojson'
-import { ApiRequest, ApiResponse } from 'mds-api-server'
-import { ApiAuthorizerClaims } from 'mds-api-authorizer'
+import { ApiRequest, ApiResponse } from '@mds/mds-api-server'
+import { ApiAuthorizerClaims } from '@mds/mds-api-authorizer'
 
 export type AgencyApiRequest = ApiRequest
 export interface AgencyApiResponse extends ApiResponse {

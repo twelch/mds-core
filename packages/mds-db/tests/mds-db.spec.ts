@@ -1,5 +1,5 @@
 import assert from 'assert'
-import { Telemetry, Recorded, VehicleEvent, Device, VEHICLE_EVENTS } from 'mds-types'
+import { Telemetry, Recorded, VehicleEvent, Device, VEHICLE_EVENTS } from '@mds/mds-types'
 import {
   JUMP_TEST_DEVICE_1,
   makeDevices,
@@ -8,8 +8,8 @@ import {
   makeStatusChange,
   makeTrip,
   JUMP_PROVIDER_ID
-} from 'mds-test-data'
-import { now } from 'mds-utils'
+} from '@mds/mds-test-data'
+import { now } from '@mds/mds-utils'
 
 import { isNullOrUndefined } from 'util'
 import MDSDBPostgres from '../index'

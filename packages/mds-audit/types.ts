@@ -14,9 +14,9 @@
     limitations under the License.
  */
 
-import { UUID, Telemetry, Timestamp, Audit } from 'mds-types'
-import { ApiAuthorizerClaims } from 'mds-api-authorizer'
-import { ApiRequest, ApiResponse } from 'mds-api-server'
+import { UUID, Telemetry, Timestamp, Audit } from '@mds/mds-types'
+import { ApiAuthorizerClaims } from '@mds/mds-api-authorizer'
+import { ApiRequest, ApiResponse } from '@mds/mds-api-server'
 
 // Allow adding type definitions for Express Request objects
 export type AuditApiRequest = ApiRequest

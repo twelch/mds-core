@@ -14,11 +14,11 @@
     limitations under the License.
  */
 
-import db from 'mds-db'
-import logger from 'mds-logger'
-import { PROPULSION_TYPE, VEHICLE_TYPE, VehicleEvent, UUID } from 'mds-types'
-import { Trip } from 'mds-db/types'
-import { now } from 'mds-utils'
+import db from '@mds/mds-db'
+import logger from '@mds/mds-logger'
+import { PROPULSION_TYPE, VEHICLE_TYPE, VehicleEvent, UUID } from '@mds/mds-types'
+import { Trip } from '@mds/mds-db/types'
+import { now } from '@mds/mds-utils'
 import { DeviceLabel } from '../labelers/device-labeler'
 import { LabeledStreamEntry } from '../types'
 import { ProviderLabel } from '../labelers/provider-labeler'

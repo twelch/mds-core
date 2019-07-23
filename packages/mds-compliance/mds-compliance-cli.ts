@@ -14,9 +14,9 @@
     limitations under the License.
  */
 import * as fs from 'fs'
-import log from 'mds-logger'
+import log from '@mds/mds-logger'
 import * as yargs from 'yargs'
-import { Policy, Geography, ComplianceResponse, VehicleEvent, Device } from 'mds-types'
+import { Policy, Geography, ComplianceResponse, VehicleEvent, Device } from '@mds/mds-types'
 import { filterPolicies, processPolicy, filterEvents } from './mds-compliance-engine'
 import { validateEvents, validateGeographies, validatePolicies } from './validators'
 

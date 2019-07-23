@@ -5,16 +5,16 @@
 /* eslint-disable promise/catch-or-return */
 /* eslint-disable promise/prefer-await-to-callbacks */
 /* eslint-disable @typescript-eslint/no-floating-promises */
-import { PROVIDER_AUTH, makeDevices, makeEventsWithTelemetry, makeTelemetryInArea } from 'mds-test-data'
+import { PROVIDER_AUTH, makeDevices, makeEventsWithTelemetry, makeTelemetryInArea } from '@mds/mds-test-data'
 
 import test from 'unit.js'
-import { api as agency } from 'mds-agency'
-import { api as policy } from 'mds-policy'
-import { api as provider } from 'mds-provider'
-import cache from 'mds-cache'
-import db from 'mds-db'
+import { api as agency } from '@mds/mds-agency'
+import { api as policy } from '@mds/mds-policy'
+import { api as provider } from '@mds/mds-provider'
+import cache from '@mds/mds-cache'
+import db from '@mds/mds-db'
 import supertest from 'supertest'
-import { now } from 'mds-utils'
+import { now } from '@mds/mds-utils'
 import {
   Telemetry,
   Device,
@@ -25,12 +25,12 @@ import {
   RULE_TYPES,
   VEHICLE_TYPES,
   PROPULSION_TYPES
-} from 'mds-types'
+} from '@mds/mds-types'
 import MockDate from 'mockdate'
 import { Feature, Polygon } from 'geojson'
 import uuidv4 from 'uuid/v4'
-import { ApiServer } from 'mds-api-server'
-import { TEST1_PROVIDER_ID } from 'mds-providers'
+import { ApiServer } from '@mds/mds-api-server'
+import { TEST1_PROVIDER_ID } from '@mds/mds-providers'
 import { la_city_boundary } from './la-city-boundary'
 import { api } from '../api'
 

@@ -18,6 +18,6 @@ import {
   AwsServerlessExpressHandler,
   AwsServerlessExpressHandlerFunction
 } from '@aws-lambda/aws-serverless-express-handler'
-import { api as daily } from 'mds-daily'
+import { api as daily } from '@mds/mds-daily'
 
 export const handler: AwsServerlessExpressHandlerFunction = AwsServerlessExpressHandler(daily)

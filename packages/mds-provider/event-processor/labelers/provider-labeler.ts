@@ -14,10 +14,10 @@
     limitations under the License.
  */
 
-import logger from 'mds-logger'
-import { providers, isProviderId } from 'mds-providers'
-import { Provider, UUID } from 'mds-types'
-import { isUUID } from 'mds-utils'
+import logger from '@mds/mds-logger'
+import { providers, isProviderId } from '@mds/mds-providers'
+import { Provider, UUID } from '@mds/mds-types'
+import { isUUID } from '@mds/mds-utils'
 import { StreamEntry, StreamEntryLabels } from '../types'
 
 export interface ProviderLabel {

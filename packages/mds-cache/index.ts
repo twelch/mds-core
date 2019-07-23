@@ -14,11 +14,11 @@
     limitations under the License.
  */
 
-import log from 'mds-logger'
+import log from '@mds/mds-logger'
 
 import flatten from 'flat'
-import { capitalizeFirst, nullKeys, stripNulls, now } from 'mds-utils'
-import { UUID, Timestamp, Device, VehicleEvent, Telemetry, BoundingBox } from 'mds-types'
+import { capitalizeFirst, nullKeys, stripNulls, now } from '@mds/mds-utils'
+import { UUID, Timestamp, Device, VehicleEvent, Telemetry, BoundingBox } from '@mds/mds-types'
 import redis from 'redis'
 import bluebird from 'bluebird'
 import { parseTelemetry, parseEvent, parseDevice } from './unflatteners'

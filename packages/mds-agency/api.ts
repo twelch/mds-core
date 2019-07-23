@@ -17,12 +17,12 @@
 import express from 'express'
 import urls from 'url'
 
-import { getVehicles } from 'mds-api-helpers'
-import log from 'mds-logger'
-import db from 'mds-db'
-import cache from 'mds-cache'
-import stream from 'mds-stream'
-import { providerName, isProviderId } from 'mds-providers'
+import { getVehicles } from '@mds/mds-api-helpers'
+import log from '@mds/mds-logger'
+import db from '@mds/mds-db'
+import cache from '@mds/mds-cache'
+import stream from '@mds/mds-stream'
+import { providerName, isProviderId } from '@mds/mds-providers'
 import areas from 'ladot-service-areas'
 import {
   UUID,
@@ -42,9 +42,9 @@ import {
   EVENT_STATUS_MAP,
   VEHICLE_STATUS,
   VEHICLE_EVENT
-} from 'mds-types'
-import { isUUID, isPct, isTimestamp, isFloat, pointInShape, now, pathsFor, ServerError } from 'mds-utils'
-import { AgencyApiRequest, AgencyApiResponse } from 'mds-agency/types'
+} from '@mds/mds-types'
+import { isUUID, isPct, isTimestamp, isFloat, pointInShape, now, pathsFor, ServerError } from '@mds/mds-utils'
+import { AgencyApiRequest, AgencyApiResponse } from '@mds/mds-agency/types'
 
 function api(app: express.Express): express.Express {
   /**

@@ -28,12 +28,12 @@
 
 import supertest from 'supertest'
 import test from 'unit.js'
-import { VEHICLE_EVENTS, Timestamp, Device, VehicleEvent, Telemetry } from 'mds-types'
-import db from 'mds-db'
-import cache from 'mds-cache'
-import { makeDevices } from 'mds-test-data'
-import { ApiServer } from 'mds-api-server'
-import { TEST1_PROVIDER_ID } from 'mds-providers'
+import { VEHICLE_EVENTS, Timestamp, Device, VehicleEvent, Telemetry } from '@mds/mds-types'
+import db from '@mds/mds-db'
+import cache from '@mds/mds-cache'
+import { makeDevices } from '@mds/mds-test-data'
+import { ApiServer } from '@mds/mds-api-server'
+import { TEST1_PROVIDER_ID } from '@mds/mds-providers'
 import { api } from '../api'
 
 process.env.PATH_PREFIX = '/agency'

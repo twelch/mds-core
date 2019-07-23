@@ -14,6 +14,6 @@
     limitations under the License.
  */
 
-import { VehicleCountsHandler as handler } from 'mds-metrics-sheet'
+import { VehicleCountsHandler as handler } from '@mds/mds-metrics-sheet'
 
 export { handler }

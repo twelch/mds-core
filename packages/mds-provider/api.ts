@@ -16,16 +16,16 @@
 
 import express from 'express'
 
-import log from 'mds-logger'
-import db from 'mds-db'
-import cache from 'mds-cache'
-import { providerName } from 'mds-providers' // map of uuids -> obj
+import log from '@mds/mds-logger'
+import db from '@mds/mds-db'
+import cache from '@mds/mds-cache'
+import { providerName } from '@mds/mds-providers' // map of uuids -> obj
 
-import { makeTelemetry, makeEvents, makeDevices } from 'mds-test-data'
-import { isUUID, now, pathsFor, round, routeDistance } from 'mds-utils'
-import { Telemetry } from 'mds-types'
-import { ReadTripsResult, Trip, ReadStatusChangesResult, StatusChange } from 'mds-db/types'
-import { asJsonApiLinks, asPagingParams } from 'mds-api-helpers'
+import { makeTelemetry, makeEvents, makeDevices } from '@mds/mds-test-data'
+import { isUUID, now, pathsFor, round, routeDistance } from '@mds/mds-utils'
+import { Telemetry } from '@mds/mds-types'
+import { ReadTripsResult, Trip, ReadStatusChangesResult, StatusChange } from '@mds/mds-db/types'
+import { asJsonApiLinks, asPagingParams } from '@mds/mds-api-helpers'
 import { Feature, FeatureCollection } from 'geojson'
 import { ProviderApiRequest, ProviderApiResponse } from './types'
 

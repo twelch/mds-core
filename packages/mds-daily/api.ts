@@ -16,13 +16,21 @@
 
 import express from 'express'
 
-import log from 'mds-logger'
-import db from 'mds-db'
-import cache from 'mds-cache'
-import stream from 'mds-stream'
-import { providerName, isProviderId } from 'mds-providers'
+import log from '@mds/mds-logger'
+import db from '@mds/mds-db'
+import cache from '@mds/mds-cache'
+import stream from '@mds/mds-stream'
+import { providerName, isProviderId } from '@mds/mds-providers'
 import areas from 'ladot-service-areas'
-import { UUID, VehicleEvent, CountMap, TripsStats, VEHICLE_EVENTS, VEHICLE_STATUSES, EVENT_STATUS_MAP } from 'mds-types'
+import {
+  UUID,
+  VehicleEvent,
+  CountMap,
+  TripsStats,
+  VEHICLE_EVENTS,
+  VEHICLE_STATUSES,
+  EVENT_STATUS_MAP
+} from '@mds/mds-types'
 import {
   isUUID,
   isTimestamp,
@@ -34,7 +42,7 @@ import {
   tail,
   isStateTransitionValid,
   ServerError
-} from 'mds-utils'
+} from '@mds/mds-utils'
 import { DailyApiRequest, DailyApiResponse } from './types'
 
 const SERVER_ERROR = {

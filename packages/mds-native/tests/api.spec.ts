@@ -7,11 +7,11 @@
 /* eslint-disable @typescript-eslint/no-floating-promises */
 import supertest from 'supertest'
 import test from 'unit.js'
-import db from 'mds-db'
-import { ApiServer } from 'mds-api-server'
-import { PROVIDER_UUID } from 'mds-test-data'
+import db from '@mds/mds-db'
+import { ApiServer } from '@mds/mds-api-server'
+import { PROVIDER_UUID } from '@mds/mds-test-data'
 import uuid from 'uuid'
-import { PROPULSION_TYPES, VEHICLE_TYPES } from 'mds-types'
+import { PROPULSION_TYPES, VEHICLE_TYPES } from '@mds/mds-types'
 import { api } from '../api'
 
 process.env.PATH_PREFIX = '/native'

@@ -11,7 +11,7 @@ import {
   Recorded,
   DeviceID,
   Rule
-} from 'mds-types'
+} from '@mds/mds-types'
 import {
   convertTelemetryToTelemetryRecord,
   convertTelemetryRecordToTelemetry,
@@ -22,8 +22,8 @@ import {
   days,
   yesterday,
   csv
-} from 'mds-utils'
-import log from 'mds-logger'
+} from '@mds/mds-utils'
+import log from '@mds/mds-logger'
 
 import { QueryResult } from 'pg'
 import { dropTables, updateSchema } from './migration'

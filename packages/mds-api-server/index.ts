@@ -1,7 +1,7 @@
 import bodyParser from 'body-parser'
 import express from 'express'
-import { pathsFor } from 'mds-utils'
-import { AuthorizationHeaderApiAuthorizer, ApiAuthorizer, ApiAuthorizerClaims } from 'mds-api-authorizer'
+import { pathsFor } from '@mds/mds-utils'
+import { AuthorizationHeaderApiAuthorizer, ApiAuthorizer, ApiAuthorizerClaims } from '@mds/mds-api-authorizer'
 
 export type ApiRequest = express.Request
 

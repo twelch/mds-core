@@ -14,6 +14,6 @@
     limitations under the License.
  */
 
-import { MetricsLogHandler as handler } from 'mds-metrics-sheet'
+import { MetricsLogHandler as handler } from '@mds/mds-metrics-sheet'
 
 export { handler }

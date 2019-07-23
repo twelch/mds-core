@@ -1,6 +1,7 @@
 {
   "name": "@mds/mds-core",
   "version": "0.1.0",
+  "private": true,
   "workspaces": [
     "aws-lambda/*",
     "packages/*"

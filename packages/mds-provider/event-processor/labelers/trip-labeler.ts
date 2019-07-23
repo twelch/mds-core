@@ -14,11 +14,11 @@
     limitations under the License.
  */
 
-import db from 'mds-db'
-import logger from 'mds-logger'
-import { UUID } from 'mds-types'
-import { isUUID } from 'mds-utils'
-import { Trip } from 'mds-db/types'
+import db from '@mds/mds-db'
+import logger from '@mds/mds-logger'
+import { UUID } from '@mds/mds-types'
+import { isUUID } from '@mds/mds-utils'
+import { Trip } from '@mds/mds-db/types'
 import { StreamEntry, StreamEntryLabels } from '../types'
 
 export interface TripLabel {
